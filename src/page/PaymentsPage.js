@@ -1,5 +1,7 @@
+import PaymentsPageBody from "../components/paymentsPage/PaymentsPageBody";
+
 const PaymentsPage = () => {
-    return(<h1>Payments Page</h1>)
+    return(<PaymentsPageBody/>)
 }
 
 export default PaymentsPage;

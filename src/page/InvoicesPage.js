@@ -1,5 +1,9 @@
+import InvoicesPageBody from "../components/invoicePage/InvoicesPageBody";
+
 const InvoicesPage = () => {
-    return(<h1>Invoice Page</h1>)
+    return(
+        <InvoicesPageBody/>
+    )
 }
 
 export default InvoicesPage;

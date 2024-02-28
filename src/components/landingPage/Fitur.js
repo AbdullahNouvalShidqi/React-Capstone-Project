@@ -2,9 +2,9 @@ import React from "react";
 import fleksibel from "../../assets/image/fleksibel.png";
 import kirim from "../../assets/image/kirim.png";
 import terpusat from "../../assets/image/terpusat.png";
-import myproject from "../../assets/image/myproject.png";
+import myproject2 from "../../assets/image/myproject2.png";
 import checkbox from "../../assets/image/checkbox.png";
-import hp from "../../assets/image/hp.png";
+import hp2 from "../../assets/image/hp2.png";
 
 const Fitur = () => {
   return (
@@ -114,7 +114,7 @@ const Fitur = () => {
             </ul>
           </div>
           <div className="col-lg-6 md-5">
-            <img className="my-image3 ms-5" src={myproject} alt="project" />
+            <img className="my-image3 ms-5" src={myproject2} alt="project" />
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@ const Fitur = () => {
       <div className="container py-5 mb-5">
         <div className="row">
           <div className="col-lg-6 md-5">
-            <img className="my-image4 ms-5 mt-5" src={hp} alt="project" />
+            <img className="my-image4 ms-5 mt-5" src={hp2} alt="project" />
           </div>
           <div className="col-lg-6 md-6">
             <h1 className="text6">
@@ -151,7 +151,7 @@ const Fitur = () => {
                   </div>
                 </div>
               </li>
-              <li className="list-item ms-3 mb-3">
+              <li className="list-item ms-3">
                 <div className="row">
                   <div className="col-sm-1">
                     <img className="check me-3" src={checkbox} alt="img" />
@@ -163,7 +163,7 @@ const Fitur = () => {
                 </div>
               </li>
             </ul>
-            <button className="download button-lg-primary">
+            <button className="download button-download">
               Download Sekarang
             </button>
           </div>

@@ -62,13 +62,8 @@ const Navbar = () => {
                 Testimoni
               </div>
             </li>
-            <li className="nav-item mx-3">
-              <div className={`nav-link ${currentActiveNavItem === 'harga' ? 'active' : ''}`} onClick={() => navItemOnClick(3950)}>
-                Harga
-              </div>
-            </li>
           </ul>
-          <button class="button-primary" onClick={cobaGratisOnClick}>Coba Gratis</button>
+          <button class="button-primary" onClick={cobaGratisOnClick}>Coba Sekarang</button>
         </div>
       </div>
     </nav>

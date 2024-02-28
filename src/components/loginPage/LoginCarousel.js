@@ -10,6 +10,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import CarouselImg from '../../assets/image/carousel-img.png';
+import carouselImg2 from '../../assets/svg/carousel-img2.svg';
+import carouselImg3 from '../../assets/svg/carousel-img3.svg';
 
 const LoginCarousel = () => {
     SwiperCore.use([Autoplay])
@@ -33,9 +35,14 @@ const LoginCarousel = () => {
                 <p className='login-carousel-subtitle'>MyINVOICE make your invoice management easier</p>
             </SwiperSlide>
             <SwiperSlide className='d-flex h-100 flex-column justify-content-center align-items-center'>
-                <img src={CarouselImg} alt='Not found' width={'400px'}></img>
-                <div className='login-carousel-title'>Manage your invoice payment easily</div>
-                <p className='login-carousel-subtitle'>MyINVOICE make your invoice management easier</p>
+                <img src={carouselImg2} alt='Not found' width={'400px'}></img>
+                <div className='login-carousel-title'>All of your customers invoices in one place</div>
+                <p className='login-carousel-subtitle'>Never lose track of your customer payments</p>
+            </SwiperSlide>
+            <SwiperSlide className='d-flex h-100 flex-column justify-content-center align-items-center'>
+                <img src={carouselImg3} alt='Not found' width={'400px'}></img>
+                <div className='login-carousel-title'>One click and go invoice management</div>
+                <p className='login-carousel-subtitle'>Access and manage your invoice anytime and anywhere</p>
             </SwiperSlide>
         </Swiper>
     );

@@ -5,7 +5,6 @@ import {
   Home,
   Fitur,
   Testimoni,
-  Hargaa,
   Footer,
 } from "../components/landingPage";
 import { handleActivatedNavItem } from "../redux/reducers/navbarSlice";
@@ -32,7 +31,7 @@ const LandingPage = () => {
       <Home />
       <Fitur />
       <Testimoni />
-      <Hargaa />
+      {/* <Hargaa /> */}
       <Footer />
     </div>
   );

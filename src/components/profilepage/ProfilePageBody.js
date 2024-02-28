@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Myprofile from "../../assets/image/Myprofile.png";
 import Bca from "../../assets/image/Bca.png";
 import Pencil from "../../assets/image/Pencil.png";
 import Tambah from "../../assets/image/Tambah.png";
+import { useSelector } from "react-redux";
+import { getMerhchantDataValue } from "../../redux/reducers/merchantSlice";
 
 const ProfilePageBody = () => {
+  const merchantData = useSelector(getMerhchantDataValue);
+  const [ currentData, setCurrentData ] = useState(merchantData);
+
   return (
     // Profile page
     <div className="body-profile container-fluid">
@@ -25,6 +30,7 @@ const ProfilePageBody = () => {
                   placeholder="Alvinwira"
                   required
                   className="form-profile form-control mt-2"
+                  value={currentData.username}
                 ></input>
               </div>
 
@@ -39,6 +45,7 @@ const ProfilePageBody = () => {
                   placeholder="wiraprathamaalvin@gmail.com"
                   required
                   className="form-profile form-control mt-2"
+                  value={currentData.email}
                 ></input>
               </div>
 
@@ -58,7 +65,7 @@ const ProfilePageBody = () => {
                 <div>
                   <label className="label-text">Profile Picture</label>
                   <div>
-                    <img src={Myprofile} alt="myprofile" class="img-profile pt-2" />
+                    <img src={currentData.display_profile_url} alt="myprofile" class="img-profile pt-2" />
                     </div>
                     <button
                       type="submit"
@@ -92,6 +99,7 @@ const ProfilePageBody = () => {
                 id="merchantName"
                 name="merchantName"
                 placeholder="Toko Sejahtera"
+                value={currentData.merchant_name}
               ></input>
             </div>
             <div className="col-4 mx-4">
@@ -120,6 +128,7 @@ const ProfilePageBody = () => {
                 placeholder="Jalan Sumatra no 2"
                 id="merchantAddress"
                 name="merchantAddress"
+                value={currentData.merchant_address}
               ></input>
             </div>
             <div className="col-4 mx-4">
@@ -139,20 +148,6 @@ const ProfilePageBody = () => {
             </div>
           </div>
 
-          <div className="row mt-3">
-            <div className="col-4">
-              <label className="label-text" for="phoneNumber">
-                Phone Number
-              </label>
-              <input
-                type="number"
-                className="form-merchant form-control mt-2"
-                placeholder="0821338102989"
-                id="phoneNumber"
-                name="phoneNumber"
-              ></input>
-            </div>
-          </div>
 
           <div className="col-4 mt-3">
             <button
